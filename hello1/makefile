@@ -37,7 +37,7 @@ all:
 	$(TOOLCHAINS_PREFIX)-gcc $(FLAGS) -c $(MODULE_NAME).c -o $(MODULE_NAME).o
 	$(TOOLCHAINS_PREFIX)-gcc $(FLAGS) $(OBJS) -o $(MODULE_NAME)
 clean:
-	$(RM) *.o *.i
+	$(RM) *.o
 install:
 	adb push $(MODULE_NAME) /data/local/
 	adb shell chmod 755 /data/local/$(MODULE_NAME)
