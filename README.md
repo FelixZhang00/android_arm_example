@@ -1,6 +1,7 @@
 # android_arm_example
 
 build on macos.
+ndk version:android-ndk-r13b
 
 step1:
 run `make`
