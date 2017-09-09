@@ -16,7 +16,9 @@ FLAGS=-I$(TOOLCHAINS_INCLUDE) \
 	-nostdlib \
 	-lgcc \
 	-Bdynamic \
-	-lc
+	-lc \
+	-pie \
+	-fPIE
 
 OBJS=$(MODULE_NAME).o \
 	$(PLATFORM_LIB)/crtbegin_dynamic.o \
